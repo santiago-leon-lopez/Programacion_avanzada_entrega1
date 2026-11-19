@@ -1,0 +1,23 @@
+<div class="content-register">
+    <div class="content-form-register">
+        <h1>Registrarse</h1>
+
+        <p>para ingresar a nuestra plataforma <br> debes registrarte</p>
+        <hr>
+        <form [formGroup]="formregister" (ngSubmit)="registrarUsuario()">
+            <div class="cont-input">
+                <input formControlName="email" type="email" placeholder="Correo electrónico">
+
+            </div>
+            <div class="cont-input">
+                <input formControlName="pass" type="password" class="input-login" placeholder="Contraseña">
+            </div>
+            <div class="cont-input">
+                <input formControlName="confirmPass" type="password" class="input-login" placeholder="Confirmar Contraseña">
+            </div>
+            <button type="submit" class="btn-register">Registrarse</button>
+        </form>
+        <p>ya tienes cuenta?</p>
+        <button type="button" class="btn-login" routerLink="/auth/login">Inicia Sesión</button>
+    </div>
+</div>
