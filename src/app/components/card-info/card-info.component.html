@@ -1,0 +1,12 @@
+<section class="cards">
+
+                <article *ngFor=" let item of infoBerdo" class="card">
+                    <h3>{{item.title}}</h3>
+                    <strong>{{item.value}}</strong>
+                    <button class="btn-card" (click)="enviarInfo(item)" type="button">Enviar data</button>
+                </article>
+
+               
+
+</section>
+

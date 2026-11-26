@@ -1,0 +1,16 @@
+article {
+    position: relative;
+}
+
+.btn-card {
+    position:absolute;
+    right: 10px;
+    z-index: 999;
+    cursor: pointer;
+    bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+    padding: 5px 10;
+}
